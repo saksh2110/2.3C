@@ -18,9 +18,6 @@
     <input type="text" v-model="studentName" />
 
     <button @click="enroll">Enroll Now</button>
-
-    <h2>Math Tuition Components</h2>
-    <!-- Include additional components related to math tuition -->
   </div>
 </template>
 
