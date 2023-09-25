@@ -1,25 +1,31 @@
 <script setup>
+// Importing necessary components and libraries
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
   <header>
+    <!-- Header section -->
 
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+      <!-- Wrapper for header content -->
+      <HelloWorld msg="You did it!" /> <!-- Display HelloWorld component -->
 
       <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
+        <!-- Navigation links -->
+        <RouterLink to="/">Home</RouterLink> <!-- Link to the Home route -->
+        <RouterLink to="/about">About</RouterLink> <!-- Link to the About route -->
       </nav>
     </div>
   </header>
 
-  <RouterView />
+  <RouterView /> <!-- Display the current route's content -->
 </template>
 
 <style scoped>
+/* Scoped CSS styles for this component */
+
 header {
   line-height: 1.5;
   max-height: 100vh;
@@ -38,17 +44,17 @@ nav {
 }
 
 nav a.router-link-exact-active {
-  color: var(--color-text);
+  color: var(--color-text); /* Styling for active router links */
 }
 
 nav a.router-link-exact-active:hover {
-  background-color: transparent;
+  background-color: transparent; /* Styling for hovered active router links */
 }
 
 nav a {
   display: inline-block;
   padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
+  border-left: 1px solid var(--color-border); /* Styling for navigation links */
 }
 
 nav a:first-of-type {
@@ -56,6 +62,8 @@ nav a:first-of-type {
 }
 
 @media (min-width: 1024px) {
+  /* Media query for screens with a minimum width of 1024px */
+
   header {
     display: flex;
     place-items: center;
